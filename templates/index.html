@@ -1,0 +1,43 @@
+﻿<!doctype html>
+<html lang="ja">
+<head>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+    <meta charset="utf-8">
+    <title>Learn By Drawing </title>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<div class="outer">
+<div class="overlay"></div>
+<h1 class="main-title" >Title</h1>
+    <div class="inner-section">
+    
+        <div class="col-half">
+            <h1 class="title textalign">Learn By drawning</h1>
+            <p  class="textalign" style="font-size: 30px; color: #fff;letter-spacing: 1px;">Using Machine Learning</p>
+        </div>
+        <div class="col-half">
+            <div class="common">
+                <div class="boxitem">
+                    <canvas id="inputimg" width="196" height="196"></canvas>
+                    <button id="clearbtn">Clear</button>
+                </div>
+                <!--<canvas id="detectimg" width="98" height="98" style="border: solid 1px black"></canvas>-->
+                <!--<canvas id="centerimg" width="98" height="98" style="border: solid 1px black"></canvas>-->
+                <div class="boxitem">
+                    <div id="predictdigit">0</div>
+                    <div style="color: #ee5835;font-weight: bold;font-size: 18px;" id="probStr">Result : </div>
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+ </div>   
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>   
+    <script src="//d3js.org/d3.v5.min.js"></script>
+
+</body>
