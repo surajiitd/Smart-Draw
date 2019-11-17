@@ -2,6 +2,13 @@
 A Flask WebApp for recognising scrambled images using Convolution Neural Network. And getting the voice as well as text prediction.
 
 
+![snapshot](./snapshots/1.png)
+![snapshot](./snapshots/2.png)
+![snapshot](./snapshots/3.png)
+![snapshot](./snapshots/4.png)
+![snapshot](./snapshots/5.png)
+![snapshot](./snapshots/6.png)
+
 
 
 ### Specific

@@ -2,6 +2,8 @@
 A Flask WebApp for recognising scrambled images using Convolution Neural Network. And getting the voice as well as text prediction.
 
 
+![snapshot](./snapshots/1.png)
+
 
 
 ### Specific
@@ -36,6 +38,7 @@ to install it
 
 - #### Training Model
 	we are training our model then using the trained model named "conv_95.5.h5" to predict the result.
+	Google colab's link: https://colab.research.google.com/drive/1QbQJlLidgOe_bKuqE65CoYDcKA7L0klL
   ```
   - python train.py 
    ```
