@@ -1,9 +1,8 @@
 ﻿## SmartDraw WebApp by CNN using TensorFlow and Flask
-A Flask WebApp for recognising scrambled images using Convolution Neural Network. And getting the voice as well as text prediction.
+A Flask WebApp for recognizing scrambled images using Convolution Neural Network. And getting the voice as well as text prediction.
 
 ![gif](./snapshots/snapshots.gif)
 
-### Specific
 
 #### Neural Network
   
@@ -13,12 +12,12 @@ A Flask WebApp for recognising scrambled images using Convolution Neural Network
 - Dropout
 - Flatten
 - Automatic Centering the Input Digit
-- 96.4% of accuracy at the Google's quick_draw dataset.
+- 96.4% of accuracy at Google's quick_draw dataset.
 
 
 #### Web Application
 
-- Flask for backbone (The Demo Site consists of Nginx + uWSGI)
+- Flask for the backbone (The Demo Site consists of Nginx + uWSGI)
 
 ### Requirement
 - Python 3.6
@@ -34,7 +33,7 @@ to install it
 ### Usage
 
 - #### Training Model
-	we are training our model then using the trained model named "conv_95.5.h5" to predict the result.
+	We are training our model, then using the trained model named "conv_95.5.h5" to predict the result.
 	Google colab's link: https://colab.research.google.com/drive/1QbQJlLidgOe_bKuqE65CoYDcKA7L0klL
   ```
   - python train.py 
