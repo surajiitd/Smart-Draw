@@ -18,7 +18,6 @@ window.onload = function(){
 }
 
 
-
 // add cavas events
 cvsIn.addEventListener("mousedown", function(e) {
 
@@ -50,35 +49,6 @@ cvsIn.addEventListener("mousemove", function(e) {
     }
 });
 
-cvsIn.addEventListener("touchstart", function(e) {
-    // for touch device
-    if (e.targetTouches.length == 1) {
-        let rect = e.target.getBoundingClientRect();
-        let touch = e.targetTouches[0];
-        let x = touch.clientX - rect.left;
-        let y = touch.clientY - rect.top;
-        ctxIn.beginPath();
-        ctxIn.moveTo(x, y);
-    }
-});
-
-cvsIn.addEventListener("touchmove", function(e) {
-    // for touch device
-    if (e.targetTouches.length == 1) {
-        let rect = e.target.getBoundingClientRect();
-        let touch = e.targetTouches[0];
-        let x = touch.clientX - rect.left;
-        let y = touch.clientY - rect.top;
-        ctxIn.lineTo(x, y);
-        ctxIn.stroke();
-        e.preventDefault();
-    }
-});
-
-cvsIn.addEventListener("touchend", function(e) {
-    // for touch device
-    onRecognition();
-});
 
 // prevent display the contextmenu
 cvsIn.addEventListener('contextmenu', function(e) {
@@ -98,7 +68,7 @@ function onRecognition() {
     console.time("time");
 
     $.ajax({
-            url: './DigitRecognition',
+            url: './ImageRecognition',
             type:'POST',
             data : {img : cvsIn.toDataURL("image/png").replace('data:image/png;base64,','') },
 
@@ -119,18 +89,6 @@ function showResult(resultJson){
 
     // show predict digit
     divOut.textContent = resultJson.predict_digit;
-
-    // show probability
-    document.getElementById("probStr").innerHTML =
-        "Probability : " + resultJson.prob[resultJson.predict_digit].toFixed(2) + "%";
-
-    // show processing images
-    //drawImgToCanvas("detectimg", resultJson.detect_img);
-    //drawImgToCanvas("centerimg", resultJson.centering_img);
-
-
-
-
 }
 
 
