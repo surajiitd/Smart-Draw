@@ -38,7 +38,7 @@ pip install -r requirements.txt
 
 - #### Training Model
 	We are training our model, then using the trained model named "conv_95.5.h5" to predict the result.
-	Google colab's link: https://colab.research.google.com/drive/1QbQJlLidgOe_bKuqE65CoYDcKA7L0klL
+	Google colab's link: https://colab.research.google.com/drive/1MuEEyzhfRa5qSjAK2uCpJdn5zbaAS_xP
 
 - #### Run WebApp
   ```
