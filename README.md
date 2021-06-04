@@ -30,6 +30,7 @@ A Flask WebApp for recognizing scribbled images using Convolution Neural Network
 
 I have explicitly provided requirements.txt file for all other requirements.
 to install those dependencies do:
+
 	```
 	pip install -r requirements.txt
 	```
