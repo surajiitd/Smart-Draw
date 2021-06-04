@@ -29,7 +29,11 @@ A Flask WebApp for recognizing scribbled images using Convolution Neural Network
 - PIL(pillow)
 
 I have explicitly provided requirements.txt file for all other requirements.
-to install it 
+to install those dependencies do:
+	```
+	pip install -r requirements.txt
+	```
+
 ### Usage
 
 - #### Training Model
