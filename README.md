@@ -12,7 +12,7 @@ A Flask WebApp for recognizing scribbled images using Convolution Neural Network
 - Dropout
 - Flatten
 - Automatic Centering the Input Digit
-- 94.6% of accuracy at Google's quick_draw dataset.
+- 95.5% of accuracy at Google's quick_draw dataset.
 
 
 #### Web Application
